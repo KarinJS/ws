@@ -10,7 +10,7 @@
     "WebSockets",
     "real-time"
   ],
-  "homepage": "https://github.com/websockets/ws",
+  "homepage": "https://github.com/karinjs/ws",
   "bugs": "https://github.com/websockets/ws/issues",
   "repository": {
     "type": "git",
