@@ -46,7 +46,7 @@ jobs:
       - run: npm pkg set type=module
         if: ${{ steps.release.outputs.release_created }}
       # 发布到 npm
-      - run: npm run pub
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
         if: ${{ steps.release.outputs.release_created }}
