@@ -44,6 +44,8 @@
     }
   },
   "devDependencies": {
+    "@types/node": "^22.14.1",
+    "@types/ws": "^8.18.1",
     "benchmark": "^2.1.4",
     "bufferutil": "^4.0.1",
     "eslint": "^9.0.0",
@@ -53,6 +55,7 @@
     "mocha": "^8.4.0",
     "nyc": "^15.0.0",
     "prettier": "^3.0.0",
-    "utf-8-validate": "^6.0.0"
+    "utf-8-validate": "^6.0.0",
+    "vite": "^6.2.6"
   }
 }
