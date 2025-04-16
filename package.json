@@ -18,13 +18,13 @@
   },
   "author": "Einar Otto Stangvik <einaros@gmail.com> (http://2x.io)",
   "license": "MIT",
-  "main": "dist/esm/index.js",
-  "types": "dist/esm/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "engines": {
     "node": ">=18.0.0"
   },
   "files": [
-    "dist/esm"
+    "dist"
   ],
   "scripts": {
     "test": "nyc --reporter=lcov --reporter=text mocha --throw-deprecation test/*.test.js",
