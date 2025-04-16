@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.3](https://github.com/KarinJS/ws/compare/v1.0.2...v1.0.3) (2025-04-16)
+
+
+### Bug Fixes
+
+* build ([2b881f0](https://github.com/KarinJS/ws/commit/2b881f013bafaa39211eef256704dc5441a6c084))
+
 ## [1.0.2](https://github.com/KarinJS/ws/compare/v1.0.1...v1.0.2) (2025-04-16)
 
 
