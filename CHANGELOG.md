@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.4](https://github.com/KarinJS/ws/compare/v1.0.3...v1.0.4) (2025-04-16)
+
+
+### Bug Fixes
+
+* main error ([c41dfb3](https://github.com/KarinJS/ws/commit/c41dfb3bef190aa75a648b5faa3cb5f140f0e319))
+
 ## [1.0.3](https://github.com/KarinJS/ws/compare/v1.0.2...v1.0.3) (2025-04-16)
 
 
