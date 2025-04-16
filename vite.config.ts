@@ -29,6 +29,8 @@ export default defineConfig({
         './**/*.js',
         'node_modules/**',
       ],
+      transformMixedEsModules: true,
+      defaultIsModuleExports: true
     },
   }
 })

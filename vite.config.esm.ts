@@ -30,6 +30,8 @@ export default defineConfig({
         './**/*.js',
         'node_modules/**',
       ],
+      transformMixedEsModules: true,
+      defaultIsModuleExports: true
     },
   },
   plugins: [
@@ -46,6 +48,7 @@ export default defineConfig({
           'dist/esm/index.js',
         )
 
+        /** 替换动态require */
         const dir = 'dist/esm/ws.mjs'
         const data = fs.readFileSync(dir, 'utf8')
         const reg = /const (.*) = require\("bufferutil"\);([\s\S]*?)catch \(e\) {/;
@@ -62,6 +65,16 @@ export default defineConfig({
     console.error(e)`
         })
         fs.writeFileSync(dir, newCode, 'utf8')
+
+        /** 将d.ts中的`export =`替换为`export default` */
+        const dtsPath = 'dist/esm/index.d.ts'
+        const dtsData = fs.readFileSync(dtsPath, 'utf8')
+        const dtsReg = /export\s*=\s*(.*);/g
+        const newDtsData = dtsData.replace(dtsReg, (match, variableName) => {
+          return `export default ${variableName};`
+        }
+        )
+        fs.writeFileSync(dtsPath, newDtsData, 'utf8')
       },
     },
   ],
